@@ -21,8 +21,12 @@ environment:
       arch: "x86"
       archgcc: "i686"
       MSYSTEM: "MINGW32"
-    - build_ruby: "23"
-      target_ruby: "2.4.0"
-      arch: "x64"
-      archgcc: "x86_64"
-      MSYSTEM: "MINGW64"
+    #- build_ruby: "23"
+      #target_ruby: "2.4.0"
+      #arch: "x64"
+      #archgcc: "x86_64"
+      #MSYSTEM: "MINGW64"
+
+artifacts:
+  - path: installer/rubyinstaller-$(target_ruby)-*-$(arch).exe
+    name: Executables
